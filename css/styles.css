@@ -2,6 +2,7 @@
 
 /* 共通部分
 -------------------------------- */
+
 html {
   font-size: 100%;
 }
@@ -19,8 +20,12 @@ img {
 /* HEADER
 -------------------------------- */
 
+/* 見出し・文章 */
+
 .page-header {
   text-align: center;
+  margin-top: 20%;
+  color: white;
 }
 
 .page-header h1 {
@@ -40,6 +45,10 @@ img {
 /* ヘッダー背景画像 */
 
 .big-bg {
+  overflow:hidden;
+}
+
+.big-bg {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -47,18 +56,21 @@ img {
 
 #home {
   background-image: url(../images/bg_natural_ocean.png);
-  min-height: 100vh;
+  background-color: rgb(175, 175, 175);
+  background-blend-mode: darken;
+  min-height: 90vh;
 }
-
-
-
 
 /* SNSlinks
 -------------------------------- */
 
-/* .SNSlinks {
-  width: 200px;
-  margin: 0 auto;
+#sns {
+  margin: 5% 0 5%;
   display: flex;
-  justify-content:space-between;
-} */
+  justify-content: center;
+}
+
+.sns-box {
+  margin: 0 60px;
+  width:100px
+}
