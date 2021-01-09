@@ -1,13 +1,12 @@
-@charset "utf-8";
-
+@charset "UTF-8";
 /* 共通部分
--------------------------------- */
-
+-------------------------------------- */
 html {
   font-size: 100%;
+  font-weight: bold;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Yu Gothic";
   line-height: 1.7;
 }
 a {
@@ -18,35 +17,86 @@ img {
 }
 
 /* HEADER
--------------------------------- */
-
-/* 見出し・文章 */
-
-.page-header {
-  text-align: center;
-  margin-top: 20%;
-  color: white;
+------------------------------------ */
+header {
+  display: flex;
+  justify-content: space-between;
 }
 
-.page-header h1 {
-  font-size: 3rem;
-  font-weight: normal;
+.header-left {
+  display: flex;
 }
 
-.main-nav {
-  margin: 20px;
+.header-title {
+  margin: auto 0;
 }
 
 .strong {
-  color: red;
-  font-weight: bold;
+  font-size: 1.5rem;
 }
 
-/* ヘッダー背景画像 */
-
-.big-bg {
-  overflow:hidden;
+.header-sns {
+  margin: auto 4%;
 }
+
+.sns-icon {
+  widows: 50px;
+  height: 50px;
+  margin: 0 10px;
+}
+.header-sns {
+  justify-content: flex-end;
+}
+
+/* ビル画像区間
+-------------------------- */
+
+.buil-ward1 {
+  display: flex;
+  justify-content: center;
+  margin-top :20%;
+  color: rgb(0, 153, 153);
+}
+
+.buil-ward1-1-fame {
+  width: 250px;
+  height: 250px;
+  background: white;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 30px;
+}
+
+.buil-ward1-1 {
+position: absolute;
+left: 90px;
+top: 100px;
+}
+
+.buil-ward1-2-fame {
+  width: 250px;
+  height: 250px;
+  background: white;
+  border-radius: 50%;
+  position: relative;
+  margin-left: 30px;
+}
+
+.buil-ward1-2 {
+  position: absolute;
+  left: 70px;
+  top: 100px;
+  }
+
+.buil-ward2 {
+  text-align: center;
+  margin: 80px 0;
+  color: white;
+  font-size: 3rem;
+
+}
+
+/* バックグラウンドイメージ */
 
 .big-bg {
   background-size: cover;
@@ -54,31 +104,109 @@ img {
   background-repeat: no-repeat;
 }
 
-#home {
-  background-image: url(../images/bg_natural_ocean.png);
-  background-color: rgb(175, 175, 175);
-  background-blend-mode: darken;
-  min-height: 90vh;
+#buil-bg {
+  background-image: url(../img/buil-bg.jpg);
+  min-height: 100vh;
+  overflow: hidden;
 }
 
-/* SNSlinks
--------------------------------- */
+/* 不動産投資をオススメする3つの理由
+---------------------------------------- */
 
-#sns {
-  margin: 5% 0 5%;
+.recommend {
+  background: rgb(3, 187, 187);
+  color: white;
+  overflow: hidden;
+}
+
+.recommend h2 {
+  text-align: center;
+  margin-top: 10%;
+  font-size: 2rem;
+}
+
+.recommend-ward {
   display: flex;
   justify-content: center;
+  margin-top: 15%;
+  font-weight: normal;
+  margin-bottom: 15%;
 }
 
-.sns-box {
-  margin: 0 60px;
-  width:100px
+.recommend-ward1-info {
+  width: 250px;
+  text-align: center;
 }
-/* モバイル版
------------------------------ */
-@media (max-width: 600px) {
-  #sns {
-  flex-direction: column;
-  }
 
+.recommend-ward-icon {
+width: 200px;
+height: 200px;
+border-radius: 50%;
 }
+
+.recommend-ward2-info {
+  width: 250px;
+  text-align: center;
+}
+
+.recommend-ward3-info {
+  width: 250px;
+  text-align: center;
+}
+
+/* 大野不動産では～～
+-------------------------------------------- */
+
+.introduction {
+  text-align: center;
+  margin: 10% 0 10%;
+  color: rgb(65, 65, 65);
+}
+
+.introduction h2 {
+  line-height: 2.5;
+}
+
+.introduction p {
+  margin-top: 5%;
+  font-weight: normal;
+}
+
+/* 大野不動産の施工例
+---------------------------------------- */
+.casestudy {
+  background-color: rgb(243, 236, 227);
+  padding-bottom: 10%;
+}
+
+.casestudy h2 {
+  text-align: center;
+  color: rgb(26, 197, 140);
+  padding:10% 0 10%;
+  font-size: 2rem;
+}
+
+.casestudy-item {
+margin: 0 auto;
+}
+
+.casestudy-img {
+  width: 320px;
+  height: 210px;
+}
+
+.casestudy-grid {
+  display: grid;
+  gap:50px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px 5% 50px;
+}
+
+.wrapper {
+  margin: 0 10% 0;
+}
+
+.casestudy-table {
+  margin: 0 auto 0;
+}
+
